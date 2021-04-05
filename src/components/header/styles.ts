@@ -4,7 +4,7 @@ export const headerStyles: Styles<any, any, any> = {
   "@import":
     "url('https://fonts.googleapis.com/css2?family=Train+One&display=swap')",
   headerContainer: {
-    padding: "30px 20px",
+    padding: "30px 30px",
     textAlign: "left",
     height: "20vh",
     position: "relative",
@@ -32,7 +32,7 @@ export const headerStyles: Styles<any, any, any> = {
     width: "50%",
     display: "flex",
     fontSize: "3vw",
-    fontFamily: "'Dela Gothic One', cursive",
+    fontFamily: "'Nunito', sans-serif",
     justifyContent: " space-between",
     right: "12vw",
     position: "absolute",
@@ -42,7 +42,7 @@ export const headerStyles: Styles<any, any, any> = {
     "& div": { visibility: "hidden" },
   },
   headerContent: {
-    padding: "30px 20px",
+    padding: "30px 30px",
     height: "60vh",
     color: "#EBFDF9",
     fontFamily: "'Train One', cursive",
