@@ -39,6 +39,9 @@ export const headerStyles: Styles<any, any, any> = {
     fontWeight: "900",
     color: "#52FBDE",
     textShadow: "2px 2px #ff0000",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
     "& div": { visibility: "hidden" },
   },
   headerContent: {
