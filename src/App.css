@@ -1,12 +1,35 @@
 .App {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
-    #05048e,
-    #0050c6,
-    #0087e7,
-    #00bbf6,
-    #00edff
-  );
+    #02010a,
+    #04052e,
+    #140152,
+    #22007c,
+    #0d00a4
+  ); */
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -2000;
+}
+
+.backgroundImage {
+  background-image: url("https://res.cloudinary.com/waliwalo/image/upload/v1617807689/portfolio/starBg_tjxkva.png");
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -2000;
 }
 
 .App-logo {

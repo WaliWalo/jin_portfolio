@@ -41,6 +41,7 @@ export const aboutStyles: Styles<any, any, any> = {
     fontFamily: "'Dela Gothic One', cursive",
     fontSize: "1.6vw",
     textAlign: "justify",
+    color: "white",
     "& span": {
       fontSize: "1.5em",
       color: "white",
@@ -54,9 +55,9 @@ export const aboutStyles: Styles<any, any, any> = {
     backgroundColor: "none",
     borderRadius: "100%",
     position: "relative",
-    // left: "25%",
-    // top: "10%",
     "& img": {
+      opacity: 1,
+      zIndex: -1,
       position: "absolute",
       filter: "drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 1))",
     },

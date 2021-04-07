@@ -16,20 +16,8 @@ function Header() {
       rotate: 360,
       autoAlpha: 1,
       top: "5vh",
-      // border: "2px solid blue",
-      onComplete: () => {
-        gsap.to(`.${classes.line}`, {
-          duration: 3,
-          width: "120vw",
-        });
-        gsap.to(`.${classes.navContainer} div`, {
-          duration: 2,
-          autoAlpha: 1,
-          stagger: 1,
-        });
-      },
     });
-    let namePosition: string = "25vh";
+    let namePosition: string = "5vh";
     if (window.innerWidth < 500) {
       namePosition = "10vh";
     }
@@ -52,23 +40,14 @@ function Header() {
   return (
     <>
       <div className={classes.headerContainer}>
-        <Row>
-          <Col>
-            <div className={classes.logoContainer}>
-              <img
-                src="https://res.cloudinary.com/waliwalo/image/upload/v1617350354/portfolio/AvatarMaker_2_vnmoix.png"
-                alt="logo"
-              />
-              <div className={classes.line}>
-                <div className={classes.navContainer}>
-                  <div>About Me</div>
-                  <div>Projects</div>
-                  <div>Contact</div>
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row>
+        <div className={classes.logoContainer}>
+          <div>
+            <img
+              src="https://res.cloudinary.com/waliwalo/image/upload/v1617807197/portfolio/AvatarMaker_2_kp8v5q.png"
+              alt="logo"
+            />
+          </div>
+        </div>
       </div>
       <div className={classes.headerContent}>
         <div className={classes.fullName}>
