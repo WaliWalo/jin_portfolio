@@ -4,6 +4,7 @@ import About from "./components/about";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Projects from "./components/projects";
+import Sections from "./components/sections";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,7 +14,7 @@ function App() {
     }
   }, []);
   return (
-    <div className="App px-3">
+    <div className="App">
       {!isMobile ? (
         <video autoPlay muted loop id="myVideo">
           <source
@@ -26,9 +27,10 @@ function App() {
       )}
 
       <Header />
-      <div style={{ height: "190vh" }}>
+      {/* <div style={{ height: "190vh" }}>
         <About />
-      </div>
+      </div> */}
+      <Sections />
       <Projects />
       <Footer />
     </div>
