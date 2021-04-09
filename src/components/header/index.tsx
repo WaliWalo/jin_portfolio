@@ -39,7 +39,7 @@ function Header() {
 
   return (
     <>
-      <div className={classes.headerContainer}>
+      <div id="headerTop" className={classes.headerContainer}>
         <div className={classes.logoContainer}>
           <div>
             <img

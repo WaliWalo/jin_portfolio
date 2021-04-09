@@ -67,3 +67,69 @@ video {
     transform: rotate(360deg);
   }
 }
+
+.scrollDownPrompt,
+.scrollUpPrompt {
+  position: fixed;
+  right: 0.5em;
+  bottom: 50vh;
+  height: 10em;
+  width: 2em;
+  /* background-color: white; */
+  z-index: 20;
+}
+
+.scrollUpPrompt {
+  transform: rotateX(180deg);
+  /* right: 0.5em; */
+  top: 13.25vh;
+}
+
+.line {
+  height: 0em;
+  width: 0.2em;
+  background-color: white;
+}
+
+.leftLine,
+.rightLine {
+  height: 0;
+  width: 0.2em;
+  background-color: white;
+  position: absolute;
+  top: 5em;
+}
+
+.leftLine {
+  transform: rotate(-45deg);
+  left: -0.3em;
+}
+
+.rightLine {
+  transform: rotate(45deg);
+  left: 0.3em;
+}
+
+#backtoTop {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+#backtoTop:hover {
+  background-color: black;
+}
+
+#backtoTop:hover svg {
+  color: white;
+}

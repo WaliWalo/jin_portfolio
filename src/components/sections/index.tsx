@@ -16,17 +16,11 @@ function Sections() {
   gsap.defaults({ ease: "none", duration: 2 });
 
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.from(`.${classes.countryContainer}`, { xPercent: -100, autoAlpha: 0 });
-    tl.from(`.${classes.cocktailContainer}`, { xPercent: 100, autoAlpha: 0 });
-    tl.from(`.${classes.codingContainer}`, { yPercent: -100, autoAlpha: 0 });
-    tl.from(`.${classes.skillsContainer}`, { yPercent: 100, autoAlpha: 0 });
-
     const countryTl = gsap.timeline({ paused: true });
     countryTl.to(`.${classes.countryText}`, {
       text: "I'm from Malaysia.",
       duration: 2,
-      delay: 2,
+      delay: 1,
     });
     countryTl.to(`.${classes.countryText}`, {
       text:
@@ -48,12 +42,25 @@ function Sections() {
         });
       },
     });
-
+    const tl = gsap.timeline();
+    tl.from(`.${classes.countryContainer}`, {
+      xPercent: -100,
+      autoAlpha: 0,
+    });
+    tl.from(`.${classes.cocktailContainer}`, {
+      xPercent: 100,
+      autoAlpha: 0,
+    });
+    tl.from(`.${classes.codingContainer}`, {
+      yPercent: -100,
+      autoAlpha: 0,
+    });
+    tl.from(`.${classes.skillsContainer}`, { yPercent: 100, autoAlpha: 0 });
     ScrollTrigger.create({
       animation: tl,
       trigger: `.${classes.sectionContainer}`,
       start: "top top",
-      end: "+=4000",
+      end: "+=2000",
       scrub: true,
       pin: true,
       anticipatePin: 1,
@@ -61,13 +68,14 @@ function Sections() {
       snap: 1 / 4,
       onSnapComplete: ({ progress, direction, isActive }) => {
         if (progress === 0.25) {
-          countryTl.restart();
+          console.log(progress);
+          return countryTl.restart();
         } else if (progress === 0.5) {
-          cocktailTl.restart();
+          return cocktailTl.restart();
         }
       },
     });
-  });
+  }, []);
 
   useEffect(() => {
     setInterval(() => rotateLogos(topPositions, leftPositions), 3000);
@@ -110,10 +118,7 @@ function Sections() {
       </div>
       <div className={classes.cocktailContainer}>
         <div className={classes.cocktailInner}>
-          <div className={classes.cocktailText}>
-            Then I acquired my Bachelor's Degree in Software Engineering in
-            Dublin
-          </div>
+          <div className={classes.cocktailText}></div>
         </div>
       </div>
       <div className={classes.codingContainer}>
@@ -165,8 +170,8 @@ function Sections() {
             />
           </div>
           <div className={classes.skillsText}>
-            My most recent skill set I acquired in 6 months from Strive are{" "}
-            <span>MERN</span> stack, <span>Socket IO</span>
+            My most recent skill set includes <span>MERN</span> stack,{" "}
+            <span>Socket IO， </span>
             <span>Redux</span>,<span> Typescript</span>, <span>GSAP</span>,{" "}
             <span>Bootstrap</span>, and deploying using <span>Heroku</span>.{" "}
             <hr />

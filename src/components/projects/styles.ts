@@ -30,6 +30,10 @@ export const projectsStyles: Styles<any, any, any> = {
     maxWidth: "none",
     display: "flex",
     justifyContent: "center",
+    "& a": {
+      color: "black",
+      "&: hover": { color: "black" },
+    },
   },
   flipCard: {
     backgroundColor: "transparent",
@@ -69,5 +73,13 @@ export const projectsStyles: Styles<any, any, any> = {
     fontSize: "3vh",
     paddingTop: "2em",
     fontFamily: "'Londrina Solid', cursive",
+  },
+  iconsContainer: {
+    display: "flex",
+    justifyContent: "space-evenly",
+    "& div": {
+      padding: 0,
+      "& svg": { height: "2em", width: "2em" },
+    },
   },
 };

@@ -24,19 +24,19 @@ export const sectionsStyles: Styles<any, any, any> = {
     },
   },
   texts: {
-    fontFamily: "'Dela Gothic One', cursive",
+    fontFamily: "'Londrina Solid', cursive",
     fontSize: "5vw",
     textAlign: "justify",
     textAlignLast: "center",
     padding: "1em 2em",
     color: "black",
-    fontWeight: 900,
+    // fontWeight: 900,
     textShadow: "0 0 3px #FF0000",
-    textStroke: "4px white",
+    textStroke: "1px white",
     "& span": {
       fontSize: "1.5em",
       color: "white",
-      textStroke: "4px black",
+      textStroke: "2px black",
     },
   },
   sectionContainer: {
@@ -58,29 +58,34 @@ export const sectionsStyles: Styles<any, any, any> = {
   },
   cocktailContainer: {
     extend: "containerSize",
-    backgroundColor: "white",
+    backgroundColor: "blue",
+    backgroundImage:
+      "linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
   },
   cocktailInner: {
-    backgroundImage: `url(
-        "https://res.cloudinary.com/waliwalo/image/upload/v1617634511/portfolio/irelandFlag_p0si4v.png"
-      )`,
+    // backgroundImage: `url(
+    //     "https://res.cloudinary.com/waliwalo/image/upload/v1617634511/portfolio/irelandFlag_p0si4v.png"
+    //   )`,
     backgroundSize: "100% 100%;",
     extend: "innerContainer",
   },
   cocktailText: {
     extend: "texts",
+    padding: "1em 2em 1em 9em",
   },
   cocktailImg: {
     backgroundImage: `url(
         "https://res.cloudinary.com/waliwalo/image/upload/v1617695492/portfolio/oie_5174154Q1GwDu7h_eu6fy2.gif"
       )`,
-    backgroundSize: "100% 100%;",
+    backgroundSize: "50% 100%;",
     extend: "innerContainer",
     visibility: "hidden",
   },
   codingContainer: {
     extend: "containerSize",
     backgroundColor: "yellow",
+    backgroundImage:
+      "linear-gradient(to left bottom, #00245b, #0c4182, #1361ab, #1382d5, #00a6ff)",
   },
   codingInner: {
     backgroundImage: `url(
@@ -95,6 +100,8 @@ export const sectionsStyles: Styles<any, any, any> = {
   skillsContainer: {
     extend: "containerSize",
     backgroundColor: "red",
+    backgroundImage:
+      "radial-gradient(circle, #52005b, #78047b, #a2079b, #cf07ba, #ff00d9)",
   },
   skillsInner: {
     display: "flex",
@@ -104,7 +111,7 @@ export const sectionsStyles: Styles<any, any, any> = {
   },
   skillsText: {
     extend: "texts",
-    fontSize: "3vw",
+    fontSize: "4vw",
   },
   rightStriveContent: {
     height: "30rem",
