@@ -2,6 +2,7 @@ import React from "react";
 import { Overlay, OverlayTrigger } from "react-bootstrap";
 import { Popover } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
+import { FaEnvelopeOpenText } from "react-icons/fa";
 import { createUseStyles } from "react-jss";
 import { footerStyles } from "./styles";
 
@@ -46,6 +47,16 @@ function Footer() {
             rel="noreferrer"
           >
             <Github size={50} />
+          </a>
+        </div>
+        <div>
+          <a
+            href={process.env.PUBLIC_URL + "/HUNG_JIN_CHONG.pdf"}
+            // target="_blank"
+            // rel="noreferrer"
+            download="download"
+          >
+            <FaEnvelopeOpenText size={50} />
           </a>
         </div>
       </div>

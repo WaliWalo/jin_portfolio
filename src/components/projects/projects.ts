@@ -1,20 +1,20 @@
 export const projects = [
   {
-    url: "",
+    url: "https://strive-spotify-clone.herokuapp.com/",
     name: "Spotify",
     techs: ["redux", "react"],
     image:
       "https://res.cloudinary.com/waliwalo/image/upload/v1617786481/portfolio/Spotify-Logo_dvyd3u.png",
   },
   {
-    url: "",
+    url: "https://linkedin-team3.herokuapp.com/",
     name: "LinkedIn",
     techs: ["react", "mongo", "socketIo"],
     image:
       "https://res.cloudinary.com/waliwalo/image/upload/v1617786130/portfolio/linkedin-icon-2_cv4ywd.svg",
   },
   {
-    url: "",
+    url: "https://buildweek4fe-t7dwttbfj-waliwalo.vercel.app",
     name: "Instagram",
     techs: ["react", "redux", "mongo", "socketIo"],
     image:
@@ -26,5 +26,12 @@ export const projects = [
     techs: ["react", "typescript", "socketIo", "mongo"],
     image:
       "https://res.cloudinary.com/waliwalo/image/upload/v1617786273/portfolio/android-chrome-512x512_whubg5.png",
+  },
+  {
+    url: "https://weatherforecaststrive.herokuapp.com/",
+    name: "Weather Forecast",
+    techs: ["react", "typescript"],
+    image:
+      "https://res.cloudinary.com/waliwalo/image/upload/v1618246898/portfolio/234-2347009_cloud-forecast-sun-weather-icon-weather-icon-removebg-preview_cmfhxe.png",
   },
 ];

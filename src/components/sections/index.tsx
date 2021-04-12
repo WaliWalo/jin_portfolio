@@ -20,28 +20,15 @@ function Sections() {
     countryTl.to(`.${classes.countryText}`, {
       text: "I'm from Malaysia.",
       duration: 2,
-      delay: 1,
+      delay: 0.5,
     });
     countryTl.to(`.${classes.countryText}`, {
       text:
         "I completed my diploma in Software Engineering in Asia Pacific University.",
       duration: 4,
-      delay: 1,
+      delay: 0.5,
     });
 
-    const cocktailTl = gsap.timeline({ paused: true });
-    cocktailTl.to(`.${classes.cocktailInner}`, {
-      duration: 1,
-      className: `${classes.cocktailImg}`,
-      autoAlpha: 1,
-      onComplete: () => {
-        cocktailTl.to(`.${classes.cocktailText}`, {
-          text:
-            "In my free time, I like to make cocktails. I was a cocktail bartender for a year while studying in Dublin",
-          duration: 3,
-        });
-      },
-    });
     const tl = gsap.timeline();
     tl.from(`.${classes.countryContainer}`, {
       xPercent: -100,
@@ -66,12 +53,13 @@ function Sections() {
       anticipatePin: 1,
       markers: true,
       snap: 1 / 4,
+      onEnter: () => {
+        countryTl.restart();
+      },
+
       onSnapComplete: ({ progress, direction, isActive }) => {
         if (progress === 0.25) {
-          console.log(progress);
           return countryTl.restart();
-        } else if (progress === 0.5) {
-          return cocktailTl.restart();
         }
       },
     });
@@ -118,7 +106,10 @@ function Sections() {
       </div>
       <div className={classes.cocktailContainer}>
         <div className={classes.cocktailInner}>
-          <div className={classes.cocktailText}></div>
+          <div className={classes.cocktailText}>
+            In my free time, I like to make cocktails. I was a cocktail
+            bartender for a year while studying in Dublin
+          </div>
         </div>
       </div>
       <div className={classes.codingContainer}>
