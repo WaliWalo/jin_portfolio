@@ -118,4 +118,11 @@ export const sectionsStyles: Styles<any, any, any> = {
   nodeLogo: { left: "33%", top: "85%", width: "8em", height: "7em" },
   typescriptLogo: { left: "-7%", top: "62%", width: "6em", heigth: "4em" },
   reduxLogo: { left: "-12%", top: "12%", width: "10em", height: "9em" },
+  "@media screen and (max-width: 500px)": {
+    countryText: { fontSize: "8vw", padding: "6em 2em" },
+    cocktailText: { fontSize: "8vw", padding: "5em 2em 4em 2em" },
+    cocktailInner: { backgroundSize: "100% 100%" },
+    codingText: { fontSize: "8vw", padding: "6em 2em" },
+    skillsText: { fontSize: "6vw" },
+  },
 };

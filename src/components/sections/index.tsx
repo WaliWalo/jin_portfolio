@@ -20,7 +20,7 @@ function Sections() {
     countryTl.to(`.${classes.countryText}`, {
       text: "I'm from Malaysia.",
       duration: 2,
-      delay: 0.5,
+      delay: 1,
     });
     countryTl.to(`.${classes.countryText}`, {
       text:
@@ -51,17 +51,15 @@ function Sections() {
       scrub: true,
       pin: true,
       anticipatePin: 1,
-      markers: true,
       snap: 1 / 4,
       onEnter: () => {
         countryTl.restart();
       },
-
-      onSnapComplete: ({ progress, direction, isActive }) => {
-        if (progress === 0.25) {
-          return countryTl.restart();
-        }
-      },
+      // onSnapComplete: ({ progress, direction, isActive }) => {
+      //   if (progress === 0.25) {
+      //     return countryTl.restart();
+      //   }
+      // },
     });
   }, []);
 

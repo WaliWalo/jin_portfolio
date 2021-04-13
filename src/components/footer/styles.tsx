@@ -11,4 +11,10 @@ export const footerStyles: Styles<any, any, any> = {
       cursor: "pointer",
     },
   },
+  footerRow: {
+    textAlign: "center",
+    "& div": {
+      paddingTop: "1em",
+    },
+  },
 };
