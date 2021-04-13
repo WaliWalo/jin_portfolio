@@ -55,11 +55,6 @@ function Sections() {
       onEnter: () => {
         countryTl.restart();
       },
-      // onSnapComplete: ({ progress, direction, isActive }) => {
-      //   if (progress === 0.25) {
-      //     return countryTl.restart();
-      //   }
-      // },
     });
   }, []);
 

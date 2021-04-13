@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Overlay, OverlayTrigger, Row } from "react-bootstrap";
+import { Col, OverlayTrigger, Row } from "react-bootstrap";
 import { Popover } from "react-bootstrap";
 import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 import { FaEnvelopeOpenText } from "react-icons/fa";

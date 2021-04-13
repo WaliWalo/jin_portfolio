@@ -4,7 +4,7 @@ import { projectsStyles } from "./styles";
 import { projects } from "./projects";
 import { Row, Col } from "react-bootstrap";
 import { FaReact } from "react-icons/fa";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import typescriptIcon from "@iconify-icons/logos/typescript-icon";
 import socketIo from "@iconify-icons/cib/socket-io";
 import fileTypeMongo from "@iconify-icons/vscode-icons/file-type-mongo";
@@ -23,6 +23,7 @@ export default function Projects() {
       <Row className={classes.projectInnerContainer}>
         {projects.map((project) => (
           <Col
+            key={project.name}
             xs={12}
             md={6}
             lg={6}
@@ -43,34 +44,40 @@ export default function Projects() {
                     <p>{project.name}</p>
                     <div className={classes.iconsContainer}>
                       <Row>
-                        {project.techs.map((tech) => {
+                        {project.techs.map((tech, index) => {
                           if (tech === "react") {
                             return (
-                              <Col xs={6}>
+                              <Col xs={6} key={index}>
                                 <FaReact />
                               </Col>
                             );
                           } else if (tech === "typescript") {
                             return (
-                              <Col xs={6}>
+                              <Col xs={6} key={index}>
                                 <Icon icon={typescriptIcon} />
                               </Col>
                             );
                           } else if (tech === "socketIo") {
                             return (
-                              <Col xs={6}>
+                              <Col xs={6} key={index}>
                                 <Icon icon={socketIo} />
                               </Col>
                             );
                           } else if (tech === "mongo") {
                             return (
-                              <Col xs={6}>
+                              <Col xs={6} key={index}>
                                 <Icon icon={fileTypeMongo} />
                               </Col>
                             );
                           } else if (tech === "redux") {
                             return (
-                              <Col xs={6}>
+                              <Col xs={6} key={index}>
+                                <Icon icon={reduxIcon} />
+                              </Col>
+                            );
+                          } else {
+                            return (
+                              <Col xs={6} key={index}>
                                 <Icon icon={reduxIcon} />
                               </Col>
                             );

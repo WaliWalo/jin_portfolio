@@ -1,6 +1,8 @@
 import { Styles } from "jss";
 
 export const sectionsStyles: Styles<any, any, any> = {
+  "@import":
+    "url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap')",
   containerSize: {
     width: "100vw",
     height: "100vh",
@@ -24,15 +26,14 @@ export const sectionsStyles: Styles<any, any, any> = {
     },
   },
   texts: {
-    fontFamily: "'Londrina Solid', cursive",
+    fontFamily: "'Teko', sans-serif",
     fontSize: "5vw",
     textAlign: "justify",
     textAlignLast: "center",
     padding: "1em 2em",
     color: "black",
-    // fontWeight: 900,
     textShadow: "0 0 3px #FF0000",
-    textStroke: "1px white",
+    textStroke: "2px white",
     "& span": {
       fontSize: "1.5em",
       color: "white",

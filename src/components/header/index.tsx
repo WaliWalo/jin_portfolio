@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 import React, { useEffect } from "react";
-import { Col, Row } from "react-bootstrap";
 import { createUseStyles } from "react-jss";
 import { headerStyles } from "./styles";
 import { TextPlugin } from "gsap/TextPlugin";
