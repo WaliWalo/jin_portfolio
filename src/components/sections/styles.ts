@@ -93,7 +93,7 @@ export const sectionsStyles: Styles<any, any, any> = {
   skillsInner: {
     display: "flex",
     justifyContent: "center",
-    paddingTop: "11em",
+    paddingTop: "6em",
     extend: "innerContainer",
   },
   skillsText: {
