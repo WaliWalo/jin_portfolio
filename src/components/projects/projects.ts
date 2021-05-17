@@ -11,7 +11,7 @@ export const projects = [
     name: "Cocktails",
     techs: ["redux", "react", "mongo", "typescript"],
     image:
-      "https://res.cloudinary.com/waliwalo/image/upload/v1617786130/portfolio/linkedin-icon-2_cv4ywd.svg",
+      "https://res.cloudinary.com/waliwalo/image/upload/v1621260666/portfolio/cocktail_ofiljq.png",
   },
   {
     url: "https://buildweek4fe-t7dwttbfj-waliwalo.vercel.app",
