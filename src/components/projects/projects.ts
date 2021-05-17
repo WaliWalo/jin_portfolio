@@ -7,9 +7,9 @@ export const projects = [
       "https://res.cloudinary.com/waliwalo/image/upload/v1617786481/portfolio/Spotify-Logo_dvyd3u.png",
   },
   {
-    url: "https://linkedin-team3.herokuapp.com/",
-    name: "LinkedIn",
-    techs: ["react", "mongo", "socketIo"],
+    url: "https://cocktail-recipes-fe.vercel.app/",
+    name: "Cocktails",
+    techs: ["redux", "react", "mongo", "typescript"],
     image:
       "https://res.cloudinary.com/waliwalo/image/upload/v1617786130/portfolio/linkedin-icon-2_cv4ywd.svg",
   },
